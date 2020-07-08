@@ -1,4 +1,3 @@
-import java.time.Instant
 
 /*
 
@@ -62,6 +61,7 @@ aka the billion dollar mistake
     - elvis operator
     - optional chaining
     - val, var and const
+    - classes vs types
 
  */
 
@@ -207,6 +207,12 @@ val map = mapOf(
 
 
 
+
+
+
+
+
+
 /*
 
  $$$$$$\    $$\
@@ -222,9 +228,6 @@ $$\   $$ |  $$ |$$\ $$ |      $$   ____|$$  __$$ |$$ | $$ | $$ | \____$$\
 
  */
 
-fun main() {
-    streams()
-}
 
 fun streams() {
     val result = list.map { it + 1 }.filter { it % 2 == 0 }.also { println(it) }
@@ -503,11 +506,52 @@ fun whatIsIt(any: Any) {
 
 
 
+// ** Functions are first class
+
+fun main() {
+    functions()
+}
+
+fun functions() {
+    val multiply: (Int, Int) -> Int = { x, y -> x * y }
+    val divide = fun(x: Int, y: Int) = x / y
+
+    println(multiply(2, 3))
+    println(divide(10, 2))
+
+    println(doThis(multiply))
+    println(doThis(divide))
+}
+
+fun doThis(operation: (Int, Int) -> Int) = operation(5, 5)
 
 
 
 
-// Nice test methods
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+// ** Nice test methods
 
 fun `should do expected stuff when stuff happens`() {
 

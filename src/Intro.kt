@@ -81,7 +81,7 @@ $$ |  $$ |$$ |$$$$$$$  |  \$$$$  |\$$$$$$  |$$ |      \$$$$$$$ |
 
 
 
-- First revealed in by JetBrains 2011
+- First revealed by JetBrains in 2011
 - 1.0 released in 2016
 - Google makes Kotlin the preferred language for Android in 2019
 
