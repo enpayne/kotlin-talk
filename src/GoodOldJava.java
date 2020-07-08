@@ -1,7 +1,5 @@
 
 
-
-
 public class GoodOldJava {
 
     private String someString;

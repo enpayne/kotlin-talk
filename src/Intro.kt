@@ -81,7 +81,7 @@ $$ |  $$ |$$ |$$$$$$$  |  \$$$$  |\$$$$$$  |$$ |      \$$$$$$$ |
 
 
 
-- First revealed in by Jetbrains 2011
+- First revealed in by JetBrains 2011
 - 1.0 released in 2016
 - Google makes Kotlin the preferred language for Android in 2019
 
@@ -139,7 +139,8 @@ $$ $$\$$ |$$ |  $$ |$$ |$$ |      $$  _$$<        $$ |  $$  __$$ |$$ |        $$
 - Interoperable with Java
 - Claims to be "pragmatic"
 - Wants to keep a low learning curve
-
+- A lot of syntactic sugar
+- Incentivizes good practices
 
  */
 
@@ -155,19 +156,25 @@ $$ $$\$$ |$$ |  $$ |$$ |$$ |      $$  _$$<        $$ |  $$  __$$ |$$ |        $$
 
 
 
+/*
+
+    - explicit and implicit types
+    - block vs expression body
+    - no semicolons
+    - no primitives
+
+ */
 
 
 
-
-
-
-
-
-
+const val hello = "hello world"
+const val someInt: Int = 1
 
 fun main() {
-    println("hello world")
+    println(hello)
 }
+
+
 
 
 
