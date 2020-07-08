@@ -1,0 +1,15 @@
+basics of defining a function
+
+string interpolation (how you can write nice test method names)
+
+infix functions
+
+extension methods
+
+generics (type erasure, inline, variance)
+
+collection support
+
+"stream" support
+
+let, with, apply
