@@ -80,12 +80,21 @@ val definitelyMaybeAString: String? = aString
 
 
 
+
+
+
+
+
+
+
+
+
 // what about Java ?
 
 fun doSomeJava() {
     val java = GoodOldJava()
-    val javaString: String? = java.someString
-    println(javaString?.length)
+    val javaString: String = java.someString
+    println(javaString.length)
 }
 
 
@@ -125,13 +134,10 @@ $$$$$$$  |\$$$$$$$ | \$$$$  |\$$$$$$$ |      \$$$$$$  |$$ |\$$$$$$$ |$$$$$$$  |$
 */
 
 
-open class Person(
+data class Person(
     val name: String,
     val age: Int
 )
-
-
-
 
 
 
@@ -507,10 +513,6 @@ fun whatIsIt(any: Any) {
 
 
 // ** Functions are first class
-
-fun main() {
-    functions()
-}
 
 fun functions() {
     val multiply: (Int, Int) -> Int = { x, y -> x * y }
